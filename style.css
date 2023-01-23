@@ -28,6 +28,20 @@ html{
 
 /* Default light theme */
 :root {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --text-color: #e1e1ff;
+    --background-color: #131313;
+    --heading-color: #818cab;
+    --contact-name: #e6af0b;
+    --card-color: rgb(80, 78, 78);
+    
+}
+ 
+/* Dark theme */
+[theme="dark"] {
+    
+
     --primary-color: #302AE6;
     --secondary-color: #536390;
     --text-color: #2b2b2b;
@@ -35,17 +49,6 @@ html{
     --heading-color: #333333;
     --contact-name: #2b2b2b;
     --card-color: rgb(155, 149, 149);
-}
- 
-/* Dark theme */
-[theme="dark"] {
-    --primary-color: #9A97F3;
-    --secondary-color: #818cab;
-    --text-color: #e1e1ff;
-    --background-color: #0f0f0f;
-    --heading-color: #818cab;
-    --contact-name: #e6af0b;
-    --card-color: rgb(80, 78, 78);
 }
 /* Adding css variable in our webpage */
 body {
@@ -78,7 +81,7 @@ a {
     display: none;
 }
 .slider {
-    background-color: rgb(44, 43, 43);
+    background-color: #e1e6e1;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -100,7 +103,7 @@ a {
 }
  
 input:checked+.slider {
-    background-color: #e1e6e1;
+    background-color: #131313;
 }
  
 input:checked+.slider:before {
@@ -213,7 +216,7 @@ section .title::after{
     color: #e6af0b;
 }
 .navbar.sticky .menu li a:hover{
-    color: #292929;
+    color: #615d24;
 }
 
 
@@ -532,7 +535,7 @@ section .title::after{
 .skills__bar,
 .skills__percentage
 {
-    height: 5px;
+    height: 9px;
     border-radius: .25rem;
 }
 
@@ -622,13 +625,15 @@ section .title::after{
 
 
 
-/* teams section styling */
+/* portfolio team section styling */
 .teams .title::after{
     content: "my works";
 }
 .teams .carousel .card{
+    height: 350px;
+    width: 300px;
     background: var(--card-color);
-    border-radius: 6px;
+    border-radius: 5%;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
